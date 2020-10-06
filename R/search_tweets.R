@@ -400,7 +400,7 @@ search_tweets_ <- function(q = "",
     params[["premium"]] <- NULL
     params$result_type <- NULL
     if (grepl("full", query)) {
-      params$maxResults <- 100
+      params$maxResults <- 500 #changed this from 100
     } else {
       params$maxResults <- 100
     }
